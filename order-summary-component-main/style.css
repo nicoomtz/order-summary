@@ -1,0 +1,107 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+}
+
+html, body {
+  background: url('./images/pattern-background-desktop.svg') no-repeat;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h3 {
+  color: var(--Dark-blue);
+}
+
+.img-main {
+  margin-top: 0px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.container {
+  width: 400px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 150px auto;
+  box-shadow: 0px 0px 30px rgb(197, 197, 197);
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-texto {
+  color: var(--Desaturated-blue);
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.card-plan {
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-plan-price {
+  margin: 0px 40px;
+}
+
+.card-plan-price p {
+  color: var(--Desaturated-blue);
+  margin: 5px 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 15px 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Bright-blue);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 2px 10px rgb(107, 107, 107);
+  cursor:pointer;
+  user-select: none;
+}
+
+.cancel-button {
+  background-color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--Desaturated-blue);
+  border: none;
+  cursor:pointer;
+  user-select: none;
+}
